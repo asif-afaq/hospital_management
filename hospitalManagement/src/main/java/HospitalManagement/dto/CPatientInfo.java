@@ -2,8 +2,6 @@ package HospitalManagement.dto;
 
 import lombok.Data;
 
-@Data
-public class CPatientInfo {
-    private final Long id;
-    private final String name;
+
+public record CPatientInfo(Long id, String name) {
 }

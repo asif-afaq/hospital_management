@@ -34,7 +34,6 @@ public class Department {
     private Doctor headDoctor;
 
     @ManyToMany
-    @JoinColumn(name = "doctors_id")
     private Set<Doctor> doctors = new HashSet<>();
 
 }
